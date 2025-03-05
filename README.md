@@ -40,8 +40,8 @@ async function main() {
         console.log(enterprises); // { list: [], totalEnterpises: 100, totalPages: 10, currentPage: 1 }
 
         const enterpiseInfo = await basi.getEnterpriseDetails({ 
-          nameFantasy: enterprises[0].nome_fantasia,
-          cnpj: enterpises[0].cnpj
+          nameFantasy: enterprises.list[0].nome_fantasia,
+          cnpj: enterpises.list[0].cnpj
         });
 
         console.log(enterpiseInfo); // { "lastUpdated": "07/02/2025 21:00", mail: "", number: [] } 
