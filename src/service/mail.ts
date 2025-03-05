@@ -39,11 +39,11 @@ export class BasiMail {
     } else return pathFile;
   }
 
-  async sendMail({ from, to, subject }: ISendMail) {
+  public async sendMail({ from, to, subject }: ISendMail) {
     try { 
       const file = await this.verifyFile();
 
-      const info = await this.service.sendMail({
+      await this.service.sendMail({
         from,
         to,
         subject,

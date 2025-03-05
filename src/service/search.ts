@@ -22,7 +22,7 @@ export class Basi {
    * @name GetEnterprises
    * @description "Get enterprises by terms/keywords."
   */
-  async getEnterpises({ query, extras, rangeQuery, page }: ISearchData) {
+  public async getEnterpises({ query, extras, rangeQuery, page }: ISearchData) {
     try {
       const newRangeQueryLte = formatDate(rangeQuery?.openingDate?.lte);
       const newRangeQueryGte = formatDate(rangeQuery?.openingDate?.gte);
@@ -41,9 +41,9 @@ export class Basi {
    * @name getEnterpriseDetails
    * @description "Get enterprise details."
   */
-  async getEnterpriseDetails({ nameFantasy: name, cnpj }: IDetailsData) {
+  public async getEnterpriseDetails({ nameFantasy: name, cnpj }: IDetailsData) {
     try {
-      const { data } = await this.session.get(`/search/${name}/${cnpj}`);
+      const { data } = await this.session.get(`search/${name}/${cnpj}`);
       return data;
     } catch (e: any) {
       return this.exceptions.badRequest(e.message);
