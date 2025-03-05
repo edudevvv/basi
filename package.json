@@ -1,0 +1,23 @@
+{
+  "name": "basisearch",
+  "version": "1.0.0",
+  "description": "A simple package to search for company data, create spreadsheets and send emails automatically.",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "search"
+  ],
+  "author": "pgwl",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^22.13.7",
+    "@types/nodemailer": "^6.4.17",
+    "axios": "^1.8.1",
+    "colors": "^1.4.0",
+    "nodemailer": "^6.10.0",
+    "winston": "^3.17.0"
+  }
+}
