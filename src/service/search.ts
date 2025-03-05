@@ -15,14 +15,14 @@ export class Basi {
       headers: { "Content-Type": "application/json" }
     });
 
-    this.exceptions = new Exceptions();
+   this.exceptions = new Exceptions();
   } 
 
   /**
-   * @name GetEnterprise
+   * @name GetEnterprises
    * @description "Get enterprises by terms/keywords."
   */
-  async getEnterpise({ query, extras, rangeQuery, page }: ISearchData) {
+  async getEnterpises({ query, extras, rangeQuery, page }: ISearchData) {
     try {
       const newRangeQueryLte = formatDate(rangeQuery?.openingDate?.lte);
       const newRangeQueryGte = formatDate(rangeQuery?.openingDate?.gte);
