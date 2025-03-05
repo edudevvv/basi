@@ -2,31 +2,31 @@
 
 A simple package to search for company data and send emails automatically.
 
-[![Version npm](https://img.shields.io/npm/v/basisearch.svg?style=flat-square)](https://www.npmjs.com/package/basisearch)
-[![npm Downloads](https://img.shields.io/npm/dm/basisearch.svg?style=flat-square)](https://npmcharts.com/compare/basisearch?minimal=true)
+[![Version npm](https://img.shields.io/npm/v/basi-search.svg?style=flat-square)](https://www.npmjs.com/package/basi-search)
+[![npm Downloads](https://img.shields.io/npm/dm/basi-search.svg?style=flat-square)](https://npmcharts.com/compare/basi-search?minimal=true)
 
-[![NPM](https://nodei.co/npm/basisearch.png?downloads=true&downloadRank=true)](https://nodei.co/npm/basisearch/)
+[![NPM](https://nodei.co/npm/basi-search.png?downloads=true&downloadRank=true)](https://nodei.co/npm/basi-search/)
 
 ## Table of Contents
 - [Installing](#installation)
 - [Usage](#usage)
-- [Documentation](#documentation-docs)
+- [Send Mails](#send-mails)
 
 ## Installation
 ```bash
-npm install basisearch@latest
+npm install basi-search@latest
 ```
 ```bash
-pnpm install basisearch@latest
+pnpm install basi-search@latest
 ```
 ```bash
-yarn add basisearch@latest
+yarn add basi-search@latest
 ```
 
 ## Usage
 
 ``` js
-const { Basi } = require("basisearch");
+const { Basi } = require("basi-search");
 
 const basi = new Basi(); 
 
@@ -55,7 +55,7 @@ main();
 ---
 ## Send Mails
 ``` js
-const { BasiMail } = require("basisearch");
+const { BasiMail } = require("basi-search");
 
 const basi = new BasiMail({
   user: "email@gmail.com",
